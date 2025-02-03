@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Edit Link Scraper",
+  "version": "1.0",
+  "description": "Scrape all post edit links across pages and save to CSV.",
+  "permissions": ["scripting", "activeTab", "downloads"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      
+      "js": ["content.js"]
+    }
+  ]
+}
